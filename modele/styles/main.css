@@ -4,4 +4,6 @@ body{
   font-family: "Niramit", "Arial", sans-serif;
   font-size: 16px;
   color: teal;
+  background-image: url("../images/homepodtop.jpg");
+  background-repeat: no-repeat;
 }
