@@ -14,19 +14,6 @@ body{
   align-items: center;
   justify-content: center;
 }
-
-.form2{
-  display: none;
-}
-
-.form3{
-  display: none;
-}
-
-.form4{
-  display: none;
-}
-
-.form5{
+.invisible{
   display: none;
 }
