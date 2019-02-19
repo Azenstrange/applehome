@@ -1,10 +1,7 @@
-.footer_background{
-  background-color: #121212;
-  height: 100%;
-}
+
 
 .footer_container{
-  width: 900px;
+  width: 768px;
   margin: 0 auto;
 }
 
@@ -158,4 +155,16 @@
 
 .footer_copyright ul li a:visited{
   color: #969696;
+}
+
+.footer_background{
+  background-color: #121212;
+  height: 100%;
+}
+
+@media screen and (max-width:768px) {
+  .footer_background{
+    background-color: red;
+    height: 100%;
+  }
 }
