@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="fr">
+ <head>
+   <meta charset="utf-8">
+   <title>titre de ma page</title>
+   <meta name="description" content="description de ma page"/>
+   <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+   <link rel="stylesheet" href="styles/main.css">
+ </head>
+ <body>
+   <div class="container">
+    <section class="form1">
+      <h2>Option de livraison et achat</h2>
+        <img src="HomePodWhite.jpg" alt="HomePodWhite">
+        <h3>Montant : 349,00€</h3>
+        <input type="submit" value="Suivant">
+    </section>
+    <section class="form2">
+      <h2>Informations personnelles </h2>
+      <form action="index.html" method="post">
+          <div>
+            <label for="nom">Nom</label >
+            <input type="text" name="nom" placeholder="Nom">
+          </div>
+          <div>
+            <label for="prénom">Prénom</label >
+            <input type="text" name="prénom" placeholder="prénom">
+          </div>
+          <div>
+            <label for="Email">Email</label>
+            <input type="email" name="email">
+          </div>
+          <div>
+            <label for="Number">Numéro de téléphone</label>
+            <input type="number" name="Numéro de téléphone">
+          </div>
+          <input type="submit" value="Suivant">
+      </section>
+      <section class="form3">
+        <h2>Adresse de livraison</h2>
+        <form action="index.html" method="post">
+            <div>
+              <label for="ville">Ville</label >
+              <input type="text" name="ville">
+            </div>
+            <div>
+              <label for="number">Numéro de rue</label >
+              <input type="number" name="Numéro de rue">
+            </div>
+            <div>
+              <label for="number">Rue</label>
+              <input type="name" name="Rue">
+              <input type="submit" value="Suivant">
+            </div>
+       </section>
+       <section class="form4">
+         <h2>Adresse de facturation</h2>
+         <form action="index.html" method="post">
+             <div>
+               <label for="ville">Ville</label >
+               <input type="text" name="ville">
+             </div>
+             <div>
+               <label for="number">Numéro de rue</label >
+               <input type="number" name="Numéro de rue">
+             </div>
+             <div>
+               <label for="number">Rue</label >
+               <input type="name" name="Rue">
+               <input type="submit" value="Suivant">
+             </div>
+        </section>
+        <section class="form5">
+          <h2>Informations Bancaires</h2>
+          <h3>Montant : 349,00€</h3>
+          <div>
+            <label for="number">Numéro de carte bancaire</label >
+            <input type="number" name="Numéro de carte bancaire" placeholder="numéro de carte bancaire">
+          </div>
+          <div>
+            <label for="number">Numéro confidentiel</label >
+            <input type="number" name="Numéro confidentiel">
+          </div>
+          <input type="checkbox" name="accepte les conditions générales de ventes" />
+          <input type="submit" value="Confirmer l'achat">
+        </section>
+     </div>
+   <script src="scripts/main.js">
+   </script>
+ </body>
+</html>
