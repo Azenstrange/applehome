@@ -1,4 +1,4 @@
-const buttonun  = document.querySelector(".momo")
+const buttonun  = document.querySelector(".suivant")
 const formun = document.querySelectorAll(".container section")
 let j = 0;
 
