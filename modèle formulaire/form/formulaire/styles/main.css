@@ -1,0 +1,32 @@
+body{
+  margin:0;
+  padding:0;
+  font-family:"Roboto", "Arial", sans-serif;
+  font-size:12px;
+  color:#444;
+}
+
+.container{
+  margin: 0 auto;
+  width: 960px;
+  margin-top:
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.form2{
+  display: none;
+}
+
+.form3{
+  display: none;
+}
+
+.form4{
+  display: none;
+}
+
+.form5{
+  display: none;
+}
