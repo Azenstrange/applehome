@@ -1,4 +1,7 @@
-
+.footer_background{
+  background-color: #121212;
+  height: 100%;
+}
 
 .footer_container{
   width: 768px;
@@ -157,14 +160,16 @@
   color: #969696;
 }
 
-.footer_background{
-  background-color: #121212;
-  height: 100%;
-}
-
-@media screen and (max-width:768px) {
-  .footer_background{
-    background-color: red;
-    height: 100%;
+@media screen and (max-width:768px){
+  .footer_container{
+    width: 100%;
+  }
+  .footer_section_delivery{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+  }
+  .footer_section_delivery article{
+    width: 40%;
   }
 }
