@@ -1,58 +1,20 @@
-const pictures 		  = document.querySelectorAll(".sliderContainer img")
-const sliderContainer = document.querySelector(".sliderContainer")
-const previousButton  = document.querySelector(".previous")
-const nextButton 	  = document.querySelector(".next")
-const dots			  = document.querySelectorAll("ul.dots li")
+const body_slider_01 = document.querySelector('.body_slider_01')
+const body_slider_02 = document.querySelector('.body_slider_02')
+const body_slider_color_selector_white = document.querySelector('.body_slider_color_selector_white')
+const body_slider_color_selector_grey = document.querySelector('.body_slider_color_selector_grey')
 
-let time = 3000,
-	step = -960,
-	currentPicture = 0,
-	slide
+body_slider_color_selector_grey.addEventListener(
+  'click',
+  function(){
+    body_slider_01.style.display='none'
+    body_slider_02.style.display='inline-block'
+    }
+)
 
-function slideInterval(){
-	slide = setInterval(() =>{
-		currentPicture = (currentPicture + 1) % pictures.length
-
-		// currentPicture++
-		// if(currentPicture >= pictures.length){
-		// 	currentPicture = 0
-		// }
-
-		sliderContainer.style.left = currentPicture * step + "px"
-	}, time)
-}
-
-slideInterval()
-
-sliderContainer.addEventListener("mouseover", () => {
-	clearInterval(slide)
-})
-sliderContainer.addEventListener("mouseleave", () => {
-	slideInterval()
-})
-
-previousButton.addEventListener("click", (e) => {
-	e.preventDefault()
-	currentPicture--
-	if(currentPicture < 0){
-		currentPicture = pictures.length - 1
-	}
-	sliderContainer.style.left = currentPicture * step + "px"
-})
-
-nextButton.addEventListener("click", (e) => {
-	e.preventDefault()
-	currentPicture++
-	if(currentPicture >= pictures.length){
-		currentPicture = 0
-	}
-	sliderContainer.style.left = currentPicture * step + "px"
-})
-
-for(let i = 0; i < dots.length; i++){
-	dots[i].querySelector("a").addEventListener("click", (e) => {
-		e.preventDefault()
-		currentPicture = i
-		sliderContainer.style.left = currentPicture * step + "px"
-	})
-}
+body_slider_color_selector_white.addEventListener(
+  'click',
+  function(){
+    body_slider_02.style.display='none'
+    body_slider_01.style.display='inline-block'
+  }
+)
