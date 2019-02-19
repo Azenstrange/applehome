@@ -9,24 +9,66 @@ body{
 .container{
   margin: 0 auto;
   width: 960px;
-  margin-top:
+<<<<<<< HEAD
+  height:700px;
+=======
+>>>>>>> e3122116804636857f6dcb6b8b7099253d925acc
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
-.form2{
+.invisible{
   display: none;
+}
+<<<<<<< HEAD
+
+h2{
+  font-size: 30px
 }
 
-.form3{
-  display: none;
+h3{
+  font-size:20px;
 }
 
-.form4{
-  display: none;
+input[type="submit"]{
+  width: 100px;
+  height:25px;
+  border-radius:3px;
+  color: white;
+  background: #258CE1;
+  border: none;
+  margin-left:250px;
+  padding:3px;
+  margin-right:10px
 }
 
-.form5{
-  display: none;
+input[type="submit"]:hover{
+  box-shadow:1px 1px 1px 1px #aaa;
 }
+
+.form5 input[type="submit"]:last-of-type{
+  width:130px;
+}
+
+label{
+  font-size: 18px;
+}
+
+input {
+    margin-bottom:15px;
+    padding: 12px;
+    width: 90%;
+    font-weight: bold;
+    border: 1px solid rgb(180, 180, 180);
+    border-radius: 4px;
+    background: #f5f5f5;
+    margin-right: auto;
+=======
+.momo{
+  width: 40px;
+  height: 10px;
+  background: #CACACA;
+  margin: 100px;
+}
+>>>>>>> e3122116804636857f6dcb6b8b7099253d925acc
