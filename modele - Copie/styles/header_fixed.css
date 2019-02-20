@@ -79,7 +79,8 @@
 
 @media screen and (max-width:768px){
   .header_fixed_container{
-    width: 100%;
+    width: calc(100% - 25px);
+  }
 
 
   }

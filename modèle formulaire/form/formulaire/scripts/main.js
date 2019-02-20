@@ -40,15 +40,23 @@ const body_slider_color_selector_grey = document.querySelector('.body_slider_col
 body_slider_color_selector_grey.addEventListener(
   'click',
   function(){
-    body_slider_01.style.display='none'
-    body_slider_02.style.display='inline-block'
+      body_slider_01.classList.remove('body_slider_fadeout')
+      body_slider_01.classList.remove('body_slider_fadein')
+      body_slider_02.classList.remove('body_slider_fadeout')
+      body_slider_02.classList.remove('body_slider_fadein')
+      body_slider_01.classList.add('body_slider_fadeout')
+      body_slider_02.classList.add('body_slider_fadein')
     }
 )
 
 body_slider_color_selector_white.addEventListener(
   'click',
   function(){
-    body_slider_02.style.display='none'
-    body_slider_01.style.display='inline-block'
+    body_slider_01.classList.remove('body_slider_fadeout')
+    body_slider_01.classList.remove('body_slider_fadein')
+    body_slider_02.classList.remove('body_slider_fadeout')
+    body_slider_02.classList.remove('body_slider_fadein')
+    body_slider_02.classList.add('body_slider_fadeout')
+    body_slider_01.classList.add('body_slider_fadein')
   }
 )
