@@ -91,3 +91,7 @@ input[type="checkbox"]{
 .retour:hover{
   box-shadow:1px 1px 1px 1px #aaa;
 }
+
+.blanc{
+  display: none;
+}
