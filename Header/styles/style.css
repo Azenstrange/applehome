@@ -1,0 +1,90 @@
+body{
+  margin:0;
+  padding: 0;
+  font-family: "Roboto", "arial", sans-serif;
+  font-size: 12px;
+  color: #444;
+  background-color: black;
+}
+.container{
+  width: 766px;
+  margin: 0 auto;
+}
+
+/*
+header
+*/
+
+
+header#header_menu{
+  background-color: #313131;
+}
+
+nav{
+  background-color: #313131;
+  margin-top: 0px;
+  display: flex;
+  justify-content: space-between;
+}
+ul{
+  margin: 0 auto;
+  display: flex;
+}
+.logo{
+  position: relative;
+  height: 15px;
+  bottom:2px;
+}
+.menu{
+  display: flex;
+  justify-content: space-between;
+}
+.menuLogoText{
+  padding: 15px 5px;
+  color: white;
+  text-decoration: none;
+}
+.menuItem{
+  display: flex;
+  list-style: none;
+  padding: 10px 10px;
+  position: relative;
+}
+.menuItem a{
+  color: white;
+  text-transform: none;
+  text-decoration: none;
+}
+.menuItem a:hover, .menuItem.current a{
+  color: #AAA;
+}
+.subMenu{
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0%;
+  list-style: none;
+  padding: 0px;
+  margin: 0px;
+  background: #555;
+  width: 200px;
+  border-radius: 5px;
+}
+.menuItem:hover .subMenu{
+  display: block;
+}
+.subMenu li{
+  padding: 5px;
+}
+.menu2{
+  padding: 0;
+  margin:0;
+  display:flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.grouplogo{
+  display: flex;
+  align-items: center;
+}
