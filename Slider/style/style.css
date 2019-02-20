@@ -131,3 +131,40 @@ justify-content: center;
 		box-shadow: inset 1px 1px #444;
 		margin : 5px;
 	}
+	@media screen and (min-width:720px) and (max-width:934px)
+	{
+		.container{
+			align-items: center;
+			flex-direction: column;
+		}
+		.slider{
+			width: 50%;
+		}
+		.sliderdeux{
+			width: 50%;
+		}
+	}
+	@media screen and (min-width:520px) and (max-width:720px)
+	{
+		.container{
+			flex-direction: column;
+		}
+		.slider{
+			width: 50%;
+		}
+		.sliderdeux{
+			width: 50%;
+		}
+	}
+	@media screen and (max-width:520px)
+{
+	.container{
+		flex-direction: column;
+	}
+	.slider{
+		width: 50%;
+	}
+	.sliderdeux{
+		width: 50%;
+	}
+}
