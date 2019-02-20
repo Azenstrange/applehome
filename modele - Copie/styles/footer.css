@@ -162,7 +162,7 @@
 
 @media screen and (max-width:768px){
   .footer_container{
-    width: 100%;
+    width: calc(100% - 25px);
   }
   .footer_section_delivery{
     display: flex;
