@@ -11,11 +11,8 @@
    <div class="container">
     <section class="form1">
       <h2>Option de livraison et achat</h2>
-<<<<<<< HEAD
-        <img src="images/homepodgris.jpg" alt="HomePodWhite">
-=======
-        <img src="#" alt="HomePodWhite">
->>>>>>> e3122116804636857f6dcb6b8b7099253d925acc
+        <img class=gris src="images/homepodgrispetit.jpg" alt="HomePod Gris Sidérale">
+        <img class="blanc" src="images/homepodblanc.jpg" alt="HomePod Blanc">
         <h3>Montant : 349,00€</h3>
       <!--   <input type="submit" value="Suivant"> -->
     </section>
@@ -85,10 +82,16 @@
             <label for="number">Numéro confidentiel</label >
             <input type="number" name="Numéro confidentiel">
           </div>
-          <input type="checkbox" name="accepte les conditions générales de ventes" />
+          <div class='cgv'>
+            <label for="accepter"><a href="https://store.apple.com/Catalog/fr/Images/salespolicies_majoraccounts.html">Accepter les conditions générales de ventes</a></label>
+            <input type="checkbox" name="accepter les conditions générales de ventes" />
+          </div>
         <!--  <input type="submit" value="Confirmer l'achat">-->
         </section>
-        <div class="momo"><p>Suivant</p></div>
+        <div class="bouton">
+        <div class="retour"><p>Retour </p></div>
+        <div class="suivant"><p>Suivant</p></div>
+      </div>
      </div>
    <script src="scripts/main.js">
    </script>
