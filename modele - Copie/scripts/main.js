@@ -21,4 +21,14 @@ body_slider_color_selector_white.addEventListener(
 
 
 
-// XXX: Acheter Hover color
+// XXX: Header_Responsive
+
+const header_fixed_button_responsive = document.querySelector('header_fixed_button_responsive')
+const header_fixed_links = document.querySelector('header_fixed_menu ul li')
+
+header_fixed_button_responsive.addEventListener(
+  'click',
+  function(){
+    header_fixed_links.classList.toggle('header_fixed.is-visible')
+  }
+)

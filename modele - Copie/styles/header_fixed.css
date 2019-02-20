@@ -45,7 +45,7 @@
 }
 
 .header_fixed_menu ul{
-  margin: 0;
+  margin: 0 0 0 75px;
 }
 
 .header_fixed_menu li{
@@ -55,7 +55,7 @@
   margin-top: 2.5px;
 }
 
-.header_fixed_menu div ul li a{
+.header_fixed_menu ul li a{
   text-decoration: none;
   color: #FFF;
   font-size: 11px;
@@ -66,22 +66,85 @@
   color: #4dbbff;
 }
 
-.header_fixed_menu div:last-child ul li:last-child a{
-  background-image: linear-gradient(#3F9FEA, #0272CA);
-  padding: 4px 11px;
-  border-radius: 3.5px;
+.header_fixed_menu div:last-child{
+  display: flex;
 }
 
-.header_fixed_menu div:last-child ul li:last-child a:hover{
+.header_fixed_menu_buy{
+  background-image: linear-gradient(#3F9FEA, #0272CA);
+  margin: 2.5px 0 0 12px;
+  padding: 4px 11px;
+  font-size: 11px;
+  height: 13px;
+  border-radius: 3.5px;
+  color: white;
+  text-decoration: none;
+}
+
+.header_fixed_menu_buy:hover{
   background-image: linear-gradient(#49a9f4, #0c7cd4);
-  color:white;
+  color:white !important;
+}
+
+.header_fixed_button_responsive{
+  display: none;
+  font-size: 25px;
+  margin: 0 55px 0 0;
+  cursor: pointer;
+  padding: 0;
+}
+
+.header_fixed.is-visible{
+  display: block !important;
 }
 
 @media screen and (max-width:768px){
   .header_fixed_container{
     width: calc(100% - 25px);
   }
-
-
+    .header_fixed_menu li{
+    display: none;
   }
+  .header_fixed_button_responsive{
+    display: block;
+  }
+
+  .header_fixed_menu{
+    display: none;
+    position: relative
+  }
+
+  .header_fixed div ul{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    background-color: #333;
+    width: calc(100% + 26px);
+    top: 45px;
+    left: -13px;
+    margin: 0;
+    text-align: center;
+    padding-left: 0
+  }
+
+  .header_fixed div ul li{
+    margin: 0;
+    padding: 0;
+  }
+
+  .header_fixed div ul li:after{
+    content: "";
+    border-bottom: 1.5px solid #262626;
+    display: block;
+    text-align: center;
+    margin-left: 25px;
+    border-width: 0.75px;
+    padding: 0;
+    width: calc(100% - 50px);
+  }
+
+  .header_fixed div ul li:last-child:after{
+    display: none;
+  }
+
 }
