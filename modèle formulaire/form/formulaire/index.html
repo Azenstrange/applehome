@@ -10,13 +10,18 @@
  <body>
    <div class="container">
     <section class="form1">
-      <h2>Option de livraison et achat</h2>
-<<<<<<< HEAD
-        <img src="images/homepodgris.jpg" alt="HomePodWhite">
-=======
-        <img src="#" alt="HomePodWhite">
->>>>>>> e3122116804636857f6dcb6b8b7099253d925acc
-        <h3>Montant : 349,00€</h3>
+      <h2>Option d'achat</h2>
+      <div class="body_container body_slider">
+        <img class="body_slider_01" src="images/homepodblanc.png" alt="body_slider_homepod_white_">
+        <img class="body_slider_02" src="images/homepodgris.png" alt="body_slider_homepod_grey">
+      </div>
+      <div class="body_slider_color_selector">
+        <div class="body_slider_color_selector_white">
+        </div>
+        <div class="body_slider_color_selector_grey">
+        </div>
+      </div>
+      <h3>Montant : 349,00€</h3>
       <!--   <input type="submit" value="Suivant"> -->
     </section>
     <section class="form2 invisible">
@@ -85,10 +90,21 @@
             <label for="number">Numéro confidentiel</label >
             <input type="number" name="Numéro confidentiel">
           </div>
-          <input type="checkbox" name="accepte les conditions générales de ventes" />
+          <div>
+            <label for="start">Date d'expiration</label>
+            <input type="date" id="start" name="trip-start"
+             value="2018-02-22" min="2019-03-01" max="2022-12-31">
+          </div>
+          <div class='cgv'>
+            <label for="accepter"><a href="https://store.apple.com/Catalog/fr/Images/salespolicies_majoraccounts.html">Accepter les conditions générales de ventes</a></label>
+            <input type="checkbox" name="accepter les conditions générales de ventes" />
+          </div>
         <!--  <input type="submit" value="Confirmer l'achat">-->
         </section>
-        <div class="momo"><p>Suivant</p></div>
+        <div class="bouton">
+        <div class="retour"><p>Retour </p></div>
+        <div class="suivant"><p>Suivant</p></div>
+      </div>
      </div>
    <script src="scripts/main.js">
    </script>

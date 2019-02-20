@@ -28,7 +28,7 @@ hr{
 
 .body_container{
   margin: 0 auto;
-  width: 766px;
+  width: 768px;
 }
 
 .body_slider{
@@ -75,11 +75,12 @@ hr{
   cursor: pointer;
 }
 
-.animation_slider_fade_out{
-  width: 9999px;
-}
+@media screen and (max-width:768px){
+  .body_container{
+    width: 100%;
+  }
 
-@keyframes slider_fade_out{
-  0% {opacity: 1}
-  100% opacity: 0}
+  .body_slider img{
+    width: 80%;
+  }
 }
