@@ -4,16 +4,60 @@ body{
   font-family:"Roboto", "Arial", sans-serif;
   font-size:12px;
   color:#444;
+  background-color: #f4f4f4
 }
 
 .container{
   margin: 0 auto;
-  width: 960px;
-  height:700px;
+  width: 768px;
   display: flex;
   align-items: center;
   justify-content: center;
   position: relative;
+}
+
+.body_slider{
+  text-align: center;
+  position: relative;
+}
+
+.body_slider img{
+  width: 450px;
+}
+
+.body_slider_01{
+  display:inline-block;
+}
+
+.body_slider_02{
+  display: none;
+}
+
+.body_slider_color_selector{
+  margin: 0 auto;
+  width: 100px;
+  display: flex;
+  justify-content: space-around;
+}
+
+.body_slider_color_selector_grey{
+  height: 25px;
+  width: 25px;
+  background-color: grey;
+  border: 0.75px solid black;
+  border-radius: 100%;
+  opacity: 0.75;
+  cursor: pointer;
+}
+
+.body_slider_color_selector_white{
+  height: 25px;
+  width: 25px;
+  background-color: white;
+  border: 0.75px solid black;
+  border-radius: 100%;
+  opacity: 0.75;
+  cursor: pointer;
 }
 
 .invisible{
