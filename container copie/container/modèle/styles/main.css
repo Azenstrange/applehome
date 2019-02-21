@@ -1,0 +1,118 @@
+body{
+  margin:0;
+  padding:0;
+  font-family:"Roboto", "Arial", sans-serif;
+  font-size:12px;
+  color:#444;
+  background-color: black;
+}
+
+.container{
+  width: 768px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+h1{
+  color: white;
+  font-size: 80px;
+  text-align: center;
+}
+
+h2{
+  color: white;
+  font-size: 80px;
+  text-align: center;
+}
+
+h1 + p{
+  color: white;
+  font-size: 24px;
+  text-align: center;
+}
+
+img{
+  width: 450px;
+  margin: auto;
+}
+
+@media screen and (max-width:768px) {
+  .container{
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  h1{
+    color: white;
+    font-size: 60px;
+    text-align: center;
+  }
+
+  h2{
+    color: white;
+    font-size: 60px;
+    text-align: center;
+  }
+
+  h1 + p{
+    color: white;
+    font-size: 16px;
+    text-align: center;
+  }
+
+  img{
+    width:300px;
+    margin: auto;
+  }
+}
+
+/*VIDEO*/
+
+video{
+  margin: 0 auto;
+  width: 768px;
+}
+.siri_flex img{
+  width: 350px;
+  margin-top: 70px;
+}
+
+.siri_flex{
+  display: flex;
+  justify-content: space-between;
+}
+
+.siri_flex h3{
+  background: linear-gradient(to right, #F0357C, #37BDDE);
+  font-size: 30px;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-left: 50px;
+  margin-bottom: 0px;
+  text-align: center;
+}
+
+.siri_flex p{
+  color: white;
+  font-size: 17px;
+  text-align: center;
+  margin-left: 50px;
+  margin-top: 10px;
+}
+
+.installation div{
+  display: flex;
+  justify-content: space-between;
+}
+.installation img{
+  width: auto;
+  margin: 0;
+  height: 550px;
+
+}
+}
