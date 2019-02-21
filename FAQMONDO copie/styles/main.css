@@ -21,7 +21,17 @@ body{
   display: flex;
 }
 
+<<<<<<< HEAD
 
+=======
+hr{
+  width
+}
+img{
+  max-width: 100%;
+  height: 300px;
+}
+>>>>>>> 725845c4da3114874ea81066c3725def473d4618
 
 .faqItem h2{
   text-transform: uppercase;
