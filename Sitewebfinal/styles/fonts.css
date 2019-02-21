@@ -1,0 +1,29 @@
+body{
+  font-family: "Sf-Pro-Text-Regular","Helvetica Neue","Helvetica","Arial",sans-serif;
+}
+
+@font-face {
+ font-family: "SF-Pro-Text-Regular";
+ src: url("../fonts/SF-Pro-Text-Regular.ttf") format("truetype");
+}
+
+@font-face {
+ font-family: "SF-Pro-Text-Semibold";
+ src: url("../fonts/SF-Pro-Text-Semibold.ttf") format("truetype");
+}
+
+@font-face {
+ font-family: "SF-Pro-Display-Semibold";
+ src: url("../fonts/SF-Pro-Display-Semibold.ttf") format("truetype");
+}
+
+.body_container{
+  margin: 0 auto;
+  width: 768px;
+}
+
+@media screen and (max-width:768px){
+  .body_container{
+    width: calc(100% - 25px);
+  }
+}

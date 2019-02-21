@@ -1,0 +1,159 @@
+body{
+  margin:0px;
+  padding:0px;
+  font-size: 16px;
+  color: white;
+  background-color: black;
+}
+
+.__container{
+  width: 768px;
+  margin: 0 auto;
+}
+
+.faq{
+  list-style: none;
+}
+
+.faqItem {
+  margin: 0;
+  display: flex;
+}
+
+.__container hr{
+  width: 100%;
+  border: 0.4px solid #444;
+}
+
+.faqItem h2{
+  color:white;
+  padding: 20px;
+  margin: 0;
+  font-size: 18px;
+  position: relative;
+  width: 80%;
+  border: 1px;
+  border-top-color: white;
+  border-bottom-color: white;
+  border-left-color: black;
+  border-right-color: black;
+
+}
+.answer{
+  margin-top: 20px;
+}
+.answer p{
+  margin: 0;
+  width: 400px;
+}
+
+
+.faqItem h2::after{
+  content:"+";
+  position: absolute;
+  top: 8px;
+  right: 3px;
+  font-size: 30px;
+  color:white;
+  transition: all linear 0.25s;
+  transform: rotate(0deg);
+
+}
+
+
+.faqItem.is-open h2::after{
+  transform: rotate(-45deg);
+  top:60%;
+  right: 85%;
+
+}
+
+.faqItem .answer{
+  display: none;
+}
+.colonne{
+  flex-wrap: nowrap;
+  justify-content: center;
+  display: flex;
+}
+.iphone{
+  width: 160px;
+}
+.iphone p{
+  margin: 0 auto;
+}
+.faqItem.is-open .answer{
+  display: flex;
+	justify-content: center;
+  flex-direction: column;
+	width: 100%;
+	padding : 0px;
+
+}
+.imagehome{
+  display: flex;
+  justify-content: center;
+  padding-top: 45px;
+}
+.imagehome img{
+  max-width: 100%;
+  height: 300px;
+}
+.titre p{
+  display: flex;
+	justify-content: center;
+}
+
+.answer p{
+  font-family: "SF-Pro-Text-Regular";
+  font-size: 11px;
+}
+
+.answer p strong{
+  font-family: "SF-Pro-Display-Semibold";
+  font-size: 15px;
+}
+
+.answer a{
+  font-family: "SF-Pro-Text-Regular";
+  font-size: 11px;
+  color: #1A7FCF;
+  text-decoration: none;
+}
+
+.answer a:hover{
+  text-decoration: underline;
+}
+
+@media screen and  (max-width:768px)
+	{
+    .imagehome{
+      display: block;
+    }
+    .titre p{
+     width: 300px;
+    }
+    .faqItem{
+      display: block;
+    }
+    .answer p{
+      width: 300px;
+    }
+    .colonne{
+      display: block;
+    }
+    .faqItem.is-open h2::after{
+      top:8px;
+      right: 3px;
+    }
+    .faqItem h2{
+      width: 30%;
+    }
+
+    .titre{
+      width: calc(100% - 25px);
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+    }
+	}

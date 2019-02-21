@@ -1,0 +1,174 @@
+body{
+  margin:0;
+  padding:0;
+  color:#444;
+  background-color: black;
+}
+
+.container{
+  width: 768px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+h1, h2, h3{
+   font-family: "SF-Pro-Display-Semibold";
+}
+
+p, span{
+   font-family: "SF-Pro-Text-Regular";
+}
+
+h1{
+  color: white;
+  font-size: 80px;
+  text-align: center;
+
+}
+
+.space_for_title{
+  margin-top: 0px;
+  margin-bottom: 50px;
+}
+
+#title_01{
+  margin-top: 0;
+}
+
+h2{
+  color: white;
+  font-size: 80px;
+  text-align: center;
+}
+
+h1 + p{
+  color: white;
+  font-size: 24px;
+  text-align: center;
+}
+
+.homepod_img{
+  width: 768px;
+  margin-top: 25px;
+}
+
+.music img{
+  width: 100%;
+}
+
+/*VIDEO*/
+
+video{
+  margin: 0 auto;
+  width: 768px;
+}
+.siri_flex img{
+  width: 350px;
+}
+
+.siri_flex{
+  display: flex;
+  justify-content: space-between;
+}
+
+.siri_flex h3{
+  background: linear-gradient(to right, #F0357C, #37BDDE);
+  font-size: 30px;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-left: 50px;
+  margin-bottom: 0px;
+  text-align: center;
+}
+
+.siri_flex p{
+  color: white;
+  font-size: 17px;
+  text-align: center;
+  margin-left: 50px;
+  margin-top: 10px;
+}
+
+.siri_flex div img{
+  width: 100%;
+}
+
+.installation div{
+  display: flex;
+  justify-content: space-between;
+}
+.installation img{
+  width: auto;
+  margin: 0;
+  height: 550px;
+}
+@media screen and (max-width:768px) {
+  .container{
+    width: calc(100% - 25px);
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  .video video{
+    width: calc(100% - 25px);
+  }
+
+  .siri_flex{
+    display: flex;
+    flex-direction: column;
+  }
+
+  .siri_flex div{
+    margin: 0 auto;
+  }
+
+  .siri_flex div:last-child h3, .siri_flex div:last-child p{
+    margin-left: 0;
+  }
+
+  .installation_flex{
+    width: calc(100% - 25px);
+    height: auto;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .installation_flex div.installation_01, .installation_flex div.installation_02{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: calc(100%);
+  }
+
+  .installation_flex div.installation_01 img, .installation_flex div.installation_02 img{
+    width: 75%;
+    height: auto;
+  }
+
+  h1{
+    color: white;
+    font-size: 60px;
+    text-align: center;
+  }
+
+  h2{
+    color: white;
+    font-size: 60px;
+    text-align: center;
+  }
+
+  h1 + p{
+    color: white;
+    font-size: 16px;
+    text-align: center;
+  }
+
+  .homepod_img{
+    width: calc(100% - 25px);
+    margin-top: 25px;
+  }
+}
