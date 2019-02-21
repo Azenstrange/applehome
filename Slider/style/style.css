@@ -24,6 +24,7 @@ body{
 	align-items: center;
 	flex-wrap: wrap;
 }
+
 .box2{
 	flex-flow: column wrap;
 	display: flex;
