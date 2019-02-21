@@ -7,7 +7,7 @@ body{
 		background-color: black;
   }
 
-.container{
+.container02{
 		height: auto;
 		width:960px;
 		margin:0 auto;
@@ -134,7 +134,7 @@ a {
 	}
 	@media screen and (min-width:720px) and (max-width:934px)
 	{
-		.container{
+		.container02{
 			align-items: center;
 			flex-direction: column;
 		}
@@ -147,7 +147,7 @@ a {
 	}
 	@media screen and (min-width:520px) and (max-width:720px)
 	{
-		.container{
+		.container02{
 			flex-direction: column;
 		}
 		.slider{
@@ -159,7 +159,7 @@ a {
 	}
 	@media screen and (max-width:520px)
 {
-	.container{
+	.container02{
 		flex-direction: column;
 	}
 	.slider{
