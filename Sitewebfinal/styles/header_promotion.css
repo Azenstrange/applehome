@@ -1,0 +1,18 @@
+.head_promotion{
+  padding-top: 45px;
+  font-size: 13px;
+  height: 45.56px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+}
+
+.head_promotion_blue{
+  background-color: #0070C9;
+  color: white;
+}
+
+.head_promotion_grey{
+  background-color: #EEE;
+  color: black;
+}

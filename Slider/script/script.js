@@ -4,7 +4,7 @@ const slider = document.querySelector('.sliderContainer')
 const sliderdeux = document.querySelector('.sliderContainer2')
 const sliderImages = document.querySelectorAll('.sliderContainer img')
 const sliderImageseux = document.querySelectorAll('.sliderContainer2 img')
-const step = 480 // definit le décalage
+const step = 404 // definit le décalage
 let pos = 0 // définit la position en cours.
 let action
 playSlider()
