@@ -44,10 +44,10 @@ function playSlider()
 for (i=1; i<6; i++){
 const bullet = document.createElement('li')
 bullet.classList.add('bullet')
-document.querySelector('ul').appendChild(bullet)
+document.querySelector('.sliderdot').appendChild(bullet)
 }
 
-let bullet = document.querySelector('ul').children
+let bullet = document.querySelector('.sliderdot').children
 
 // let bullet = document.querySelectorAll('li')
 
