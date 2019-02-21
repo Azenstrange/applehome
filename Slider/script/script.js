@@ -7,8 +7,11 @@ const sliderImageseux = document.querySelectorAll('.sliderContainer2 img')
 const step = 480 // definit le décalage
 let pos = 0 // définit la position en cours.
 let action
+playSlider()
 
 
+slider.addEventListener('mouseover',stopSlider)
+slider.addEventListener('mouseout',playSlider)
 function setPosition(pos)
 {
   slider.style.left = -pos*step+'px'
@@ -17,8 +20,23 @@ function setPosition(pos)
 
 
 
+function stopSlider()
+{
+  clearInterval(action)
+}
 
 
+function playSlider()
+{
+  action = setInterval(
+    function()
+    {
+      pos = (pos+1)%sliderImages.length
+      setPosition(pos)
+    },
+    3000 // toutes les 3 secondes
+  )
+}
 
 
 // BOUTON DE NAVIGATION
