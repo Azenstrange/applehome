@@ -2,7 +2,7 @@ const buttonun  = document.querySelector(".suivant")
 const buttondeux  = document.querySelector(".retour")
 const formun = document.querySelectorAll(".container div[class^=form")
 const panier  = document.querySelector(".ajouter_au_panier")
-const bouton = document.querySelector(".bouton")
+const buttonfin = document.querySelector(".finaliser")
 let j = 0;
 
 panier.addEventListener(
@@ -23,6 +23,9 @@ buttonun.addEventListener(
   'click',
   function(){
     if(j<formun.length-1){
+      if (j>=formun.length-3) {
+        buttonfin.classList.toggle("invisible");
+      }
       console.log(j)
       formun[j].classList.toggle("invisible");
       j++;
@@ -40,12 +43,27 @@ buttondeux.addEventListener(
         buttondeux.classList.toggle("invisible");;
         panier.classList.toggle("invisible");
       }
+      if (j>=formun.length-2) {
+        buttonfin.classList.toggle("invisible");
+      }
       console.log(j)
       formun[j].classList.toggle("invisible");
       j--;
       console.log(j)
       formun[j].classList.toggle("invisible");
     }
+  }
+)
+buttonfin.addEventListener(
+  'click',
+  function(){
+    buttondeux.classList.toggle("invisible");
+    buttonun.classList.toggle("invisible");
+    buttonfin.classList.toggle("invisible");
+    formun[j].classList.toggle("invisible");
+    j++;
+    console.log(j)
+    formun[j].classList.toggle("invisible");
   }
 )
 
