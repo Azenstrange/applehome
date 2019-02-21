@@ -25,6 +25,7 @@ buttonun.addEventListener(
     if(j<formun.length-1){
       if (j>=formun.length-3) {
         buttonfin.classList.toggle("invisible");
+        buttonun.classList.toggle("invisible");
       }
       console.log(j)
       formun[j].classList.toggle("invisible");
@@ -45,6 +46,7 @@ buttondeux.addEventListener(
       }
       if (j>=formun.length-2) {
         buttonfin.classList.toggle("invisible");
+        buttonun.classList.toggle("invisible");
       }
       console.log(j)
       formun[j].classList.toggle("invisible");
@@ -58,12 +60,14 @@ buttonfin.addEventListener(
   'click',
   function(){
     buttondeux.classList.toggle("invisible");
-    buttonun.classList.toggle("invisible");
     buttonfin.classList.toggle("invisible");
     formun[j].classList.toggle("invisible");
     j++;
     console.log(j)
     formun[j].classList.toggle("invisible");
+    if (buttonun.classList.contain("invisible")) {
+          buttonun.classList.toggle("invisible");
+    }
   }
 )
 
