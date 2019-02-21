@@ -1,6 +1,6 @@
 const buttonun  = document.querySelector(".suivant")
 const buttondeux  = document.querySelector(".retour")
-const formun = document.querySelectorAll(".container section")
+const formun = document.querySelectorAll(".container div[class^=form")
 let j = 0;
 
 
