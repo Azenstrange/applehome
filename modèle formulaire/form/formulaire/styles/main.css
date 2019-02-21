@@ -140,6 +140,19 @@ input {
   position:absolute;
   margin-top:350px;
 }
+.finaliser{
+  width: 80px;
+  font-size:15px;;
+  height:40px;
+  border-radius:3px;
+  color: white;
+  background: #258CE1;
+  border: none;
+  padding-left:26px;
+  padding-bottom:3px;
+  position:absolute;
+  margin-top:350px;
+}
 
 .suivant:hover{
   box-shadow:1px 1px 1px 1px #aaa;
