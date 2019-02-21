@@ -104,6 +104,10 @@ body{
 	justify-content: center;
 }
 
+.titre{
+  margin: auto 15px;
+}
+
 .answer p{
   font-family: "SF-Pro-Text-Regular";
   font-size: 11px;
