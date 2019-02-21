@@ -95,6 +95,12 @@ h3{
 
 hr{
    width:100%;
+   margin-top: 50px;
+}
+
+.price p{
+  font-size:25px;
+  height:1px;
 }
 
 .care{
@@ -172,7 +178,7 @@ input[type="checkbox"]{
 
 @media screen and (max-width:768px) {
   .container{
-    width:768px;
+    width: calc(100% - 25px);
   }
   h2{
     font-size:25px;
@@ -209,20 +215,35 @@ input[type="checkbox"]{
     margin-top:320px;
     margin-left:-200px;
   }
-  .body_slider img{
-    width:100%;
+
+  .body_slider_price{
+    display: flex;
+    flex-direction: column;
+  }
+  .body_slider_price div.price{
+    height: 150px;
+    width: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    margin: 0 auto;
+  }
+
+  div.slider div img.body_slider_01{
+    width: calc(100% - 25px);
   }
 }
 
 
 .ajouter_au_panier{
-    margin-top: 150px;
+    margin-top: 20px;
 }
 
 .ajouter_au_panier span{
   background-color: #258CE1;
   border-radius: 5px;
-  padding: 5px 50px;
+  padding: 5px 30px;
   color: white;
 }
 
@@ -232,6 +253,8 @@ input[type="checkbox"]{
 }
 
 .body_slider_price .price{
-  height: 330px;
-  margin-top: 120px
+  height: 480px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
