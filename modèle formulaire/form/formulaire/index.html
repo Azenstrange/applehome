@@ -9,22 +9,44 @@
  </head>
  <body>
    <div class="container">
-    <section class="form1">
-      <h2>Option d'achat</h2>
-      <div class="body_container body_slider">
-        <img class="body_slider_01" src="images/homepodblanc.png" alt="body_slider_homepod_white_">
-        <img class="body_slider_02" src="images/homepodgris.png" alt="body_slider_homepod_grey">
-      </div>
-      <div class="body_slider_color_selector">
-        <div class="body_slider_color_selector_white">
+    <div class="form1">
+      <h2>Acheter un HomePod</h2>
+      <div class="body_slider_price">
+        <div class="slider">
+          <div class="body_container body_slider">
+            <img class="body_slider_01" src="images/homepodblanc.png" alt="body_slider_homepod_white_">
+            <img class="body_slider_02" src="images/homepodgris.png" alt="body_slider_homepod_grey">
+          </div>
+          <div class="body_slider_color_selector">
+            <div class="body_slider_color_selector_white"></div>
+            <div class="body_slider_color_selector_grey"></div>
+          </div>
         </div>
-        <div class="body_slider_color_selector_grey">
+        <div class="price">
+          <p>349,00€</p> <br>
+          <span class="tva">TVA et frais inclus : env. 59,00 €.</span>
+          <div class="ajouter_au_panier">
+            <span>Ajouter au panier<span>
+          </div>
         </div>
       </div>
-      <h3>Montant : 349,00€</h3>
+      <hr align="left">
+      <div class='AppleCare'>
+        <h3>Ajoutez l'Apple Care+</h3>
+        <a href="https://www.apple.com/fr/support/products/"><img class="care" src="images/logocare.JPG" alt="logo Apple Care*"></a>
+        <p>
+          AppleCare+ pour HomePod 45,00 €
+        </p>
+        <p>
+          Jusqu’à deux ans d’assistance technique et de garantie couvrant les dégâts accidentels.
+        </p>
+        <p>
+          Inclut la taxe sur les primes d’assurance (au taux applicable)
+        </p>
+      </div>
       <!--   <input type="submit" value="Suivant"> -->
-    </section>
-    <section class="form2 invisible">
+    </div>
+    <div class="form2 invisible">
       <h2>Informations personnelles </h2>
       <form action="index.html" method="post">
           <div>
@@ -44,8 +66,8 @@
             <input type="number" name="Numéro de téléphone">
           </div>
           <!-- <input type="submit" value="Suivant"> -->
-      </section>
-      <section class="form3 invisible">
+      </div>
+      <div class="form3 invisible">
         <h2>Adresse de livraison</h2>
         <form action="index.html" method="post">
             <div>
@@ -61,8 +83,8 @@
               <input type="name" name="Rue">
             <!--   <input type="submit" value="Suivant"> -->
             </div>
-       </section>
-       <section class="form4 invisible">
+       </div>
+       <div class="form4 invisible">
          <h2>Adresse de facturation</h2>
          <form action="index.html" method="post">
              <div>
@@ -78,10 +100,10 @@
                <input type="name" name="Rue">
               <!--  <input type="submit" value="Suivant"> -->
              </div>
-        </section>
-        <section class="form5 invisible">
-          <h2>Informations Bancaires</h2>
-          <h3>Montant : 349,00€</h3>
+        </div>
+        <div class="form5 invisible">
+          <p>Informations Bancaires</p>
+          <p>Montant : 349,00€</p>
           <div>
             <label for="number">Numéro de carte bancaire</label >
             <input type="number" name="Numéro de carte bancaire" placeholder="numéro de carte bancaire">
@@ -100,7 +122,7 @@
             <input type="checkbox" name="accepter les conditions générales de ventes" />
           </div>
         <!--  <input type="submit" value="Confirmer l'achat">-->
-        </section>
+        </div>
         <div class="bouton">
         <div class="retour"><p>Retour </p></div>
         <div class="suivant"><p>Suivant</p></div>
