@@ -112,7 +112,8 @@ a {
 		justify-content: center;
 		width: 100%;
 		padding : 0px;
-		bottom : 5%
+		bottom : 5%;
+		cursor: pointer;
 	}
 
 	.bullet{
