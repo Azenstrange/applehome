@@ -90,7 +90,8 @@ border-right-color: black;
 
 }
 .imagehome{
-  display: flex
+  display: flex;
+  justify-content: center;
 }
 .imagehome img{
   max-width: 100%;
